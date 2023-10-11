@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Аутентификация</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-size: cover;
+      background-position: center center;
+    }
+    .auth-form {
+      width: 400px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .form-row {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+    }
+    input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="site-title">Капибара</div>
+  <nav>
+    <ul>
+      <li><a href="#about">О капибарах</a></li>
+      <li><a href="#habitat">Местообитание</a></li>
+      <li><a href="#facts">Интересные факты</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="auth-form">
+    <h2>Вход в систему</h2>
+    <form method="POST" action="index.html">
+      <div class="form-row">
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+      </div>
+      <div class="form-row">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-row">
+        <input type="checkbox" id="remember" name="remember">
+        <label class="checkbox-label" for="remember">Запомнить меня</label>
+      </div>
+      <div class="form-row">
+        <button type="submit" id="loginButton" >Войти</button>
+      </div>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>Кучерова Мария, 221-362</p>
+  <p>
+    <a href="mailto:mmar1yakucherova@yandex.ru">mmar1yakucherova@yandex.ru</a>
+    |
+    <a href="tel:+79654709795">+7 (965) 470-97-95</a>
+  </p>
+</footer>
+</body>
+</html>
